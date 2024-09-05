@@ -4,9 +4,11 @@ import CountryItem from '../components/CountryItem'
 import Message from '../components/Message'
 import Spinner from '../components/Spinner'
 
+
+
 const CountryList = ({cities,isLoading}) => {
   if (isLoading) return <Spinner/>;
-  console.log(cities)
+  // console.log(cities)
   // ------------------------------------
   if(!cities.length) return <Message  message="Add your First City By Click in City on Map"/>
   // -------------------------------------
