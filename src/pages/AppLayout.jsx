@@ -8,11 +8,9 @@ import ProtectedRoute from '../pages/ProtectedRoute'
 export default function AppLayout() {
   return (
   <div className={styles.app}>
-    <ProtectedRoute>
       <Sidebar/>
       <Map/>
       <User/>
-    </ProtectedRoute>
   </div>
   )
 }
