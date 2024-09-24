@@ -10,6 +10,8 @@ import CountryList from "./components/CountryList";
 import City from './components/City';
 import Form from './components/Form';
 import {CitiesProvider} from './contexts/CitiesContext';
+import {AuthProvider} from './contexts/FakeAuthContext';
+import ProtectedRoute from './pages/ProtectedRoute'
 // import  from ''
 
 
@@ -18,6 +20,8 @@ function App() {
 
 
 return(
+
+  <AuthProvider>
   <CitiesProvider>
   <BrowserRouter>
   <Routes>
@@ -27,7 +31,11 @@ return(
     <Route path="product" element={<Product/>}/>
     <Route path="*" element={<PageNotFound/>}/>
 
-    <Route path="/app" element={<AppLayout/> }>
+    <Route path="/app" element={
+        <ProtectedRoute>
+          <AppLayout/> 
+        </ProtectedRoute>
+      }>
       {/* Nested Routes */}
       {/* index Route default  child Route*/}
       <Route index element={<Navigate replace to='cities' />} />
@@ -43,7 +51,7 @@ return(
 
   </BrowserRouter>
   </CitiesProvider>
-
+  </AuthProvider>
 
 )
 }

@@ -19,6 +19,8 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 html {
