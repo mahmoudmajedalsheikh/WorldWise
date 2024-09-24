@@ -18,3 +18,6 @@ This template provides a minimal setup to get React working in Vite with HMR and
 - `Vite` [website](https://vitejs.dev/)
 - `JSON Server` For Fake Server [website](https://www.npmjs.com/package/json-server/v/0.17.3)
 
+## To Learn How to Use
+
+### useState + useReducer + useContext + useGeolocation + work with Api
