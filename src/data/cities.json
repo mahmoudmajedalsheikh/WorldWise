@@ -83,6 +83,30 @@
         "lat": "24.297040469311572",
         "lng": "39.78149414062501"
       }
+    },
+    {
+      "id": "9aec",
+      "cityName": "Al ‘Ashir min Ramaḑan",
+      "country": "Al ‘Ashir min Ramaḑan",
+      "emoji": "🇪🇬",
+      "date": "2024-09-24T19:07:54.754Z",
+      "notes": "",
+      "position": {
+        "lat": "30.30531155491787",
+        "lng": "31.73812866210938"
+      }
+    },
+    {
+      "id": "3e11",
+      "cityName": "Tripoli",
+      "country": "Tripoli",
+      "emoji": "🇱🇾",
+      "date": "2024-10-03T04:21:21.299Z",
+      "notes": "",
+      "position": {
+        "lat": "32.87592630428602",
+        "lng": "13.221508136444566"
+      }
     }
   ]
 }
